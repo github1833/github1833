@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/shiro?characterEncoding=utf8&SeverTimezone=UTC
+      username: root
+      password: 12121212
+      driverClassName: com.mysql.cj.jdbc.Driver
+      min-idle: 10 # 最小
+      max-active: 100 # 最大
+  thymeleaf:
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    cache: false
+    enabled: true
+    servlet:
+      content-type: text/html
+
+
+
+mybatis:
+  mapper-locations: classpath:mappers/*Mapper.xml
